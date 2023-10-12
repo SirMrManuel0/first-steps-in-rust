@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     // by default variabels are not changeable 
     // let x = 4; // implicitly assigned
@@ -85,6 +87,12 @@ fn main() {
 
     */
 
+
+    let mut input = String::new();
+
+    io::stdin().read_line(&mut input).expect("failed to read line");
+
+    println!("{}", input);
 
 
 
